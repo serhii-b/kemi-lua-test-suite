@@ -1,7 +1,10 @@
 local myPath = "kemi-test-suite.mocks.modules."
 
 local modules = {
+    "auth",
+    "auth_db",
     "corex",
+    "dispatcher",
     "tm",
     "dialplan",
     "hdr",
@@ -11,6 +14,7 @@ local modules = {
     "kx",
     "maxfwd",
     "nathelper",
+    "ipops",
     "permissions",
     "pv",
     "registrar",
@@ -23,6 +27,7 @@ local modules = {
     "statsd",
     "tcpops",
     "textops",
+    "uac",
     "textopsx",
     "xhttp",
 }

@@ -12,6 +12,7 @@ local colors = require "kemi-test-suite.colors"
 local json = require "cjson.safe"
 -- local s = require("say")
 local testMock = require('kemi-test-suite.mocks.kamailio')
+local unpack = table.unpack or unpack
 
 local testAlgorithms = {
     same        = "same",

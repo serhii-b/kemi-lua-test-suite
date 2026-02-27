@@ -15,5 +15,6 @@ return function(testData)
         ["htable"] = testData.htable or testData["$sht"] or {},
         ["$shtex"] = testData["$shtex"] or {},
         ["$expires"] = testData["$expires"] or {},
+	["$ua"] = testData["$ua"]
     }
 end

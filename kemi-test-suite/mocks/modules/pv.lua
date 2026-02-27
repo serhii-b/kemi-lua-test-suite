@@ -28,6 +28,15 @@ local function get (var)
     return res
 end
 
+local function gete (var)
+    KAMAILIO_CRASH_CHECK(debug.getinfo(1),1,var)
+    local res = get(var)
+    if not res then
+        return ""
+    end
+    return res
+end
+
  local function seti (var,val)
     KAMAILIO_CRASH_CHECK(debug.getinfo(1),2,var,val)
     local prefix,name,id = string.match(var,"%$%((%a+)%(([%w%-%s:=>%.%{%}]+)%)%[(%d+)%]%)")
@@ -97,6 +106,7 @@ end
 return {
     get=get,
     getvs=getvs,
+    gete=gete,
     sets=sets,
     seti=seti
 }
